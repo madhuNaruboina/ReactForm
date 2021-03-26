@@ -1,10 +1,14 @@
 import React, {Component} from 'react';
 import form  from '../Form/form.css'
 
-export default class SimpleForm extends React.Component {
-    submitForm() {
-      alert("Hi")
-    };
+export default class SimpleForm extends Component {
+
+   
+    submit = () => {
+        alert("Submit successfull")
+       
+        
+      }
     render(){    
         return(
             <div>
@@ -23,7 +27,7 @@ export default class SimpleForm extends React.Component {
                          <input type="radio" value="Other" name="gender" /> Other
                       </div>
                       <div>
-                          <h3>
+                          <h3> 
                              Desgination
                           </h3>
                           <input type="checkbox" id="javaD" name="peripherals" value="screen"/>
@@ -37,8 +41,8 @@ export default class SimpleForm extends React.Component {
                        
 
 
-<input type="submit" onclick="submitForm()" value="Submit"/>
-<input type="reset" onclick="cancelForm()" value="Reset"/>
+<input type="submit" onClick={this.submit} value="Submit"/>
+<input type="reset" onClick="cancelForm()" value="Reset"/>
 
                     </div>
                    
