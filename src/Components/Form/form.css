@@ -10,8 +10,8 @@ input[type=text], select {
 
   label {
     display: inline-block;
-    text-align: right;
-    /* float: left; */
+    text-align: Left; 
+    
   }
   
   input[type=submit],input[type=reset] {
